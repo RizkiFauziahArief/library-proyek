@@ -1,0 +1,16 @@
+Catatan:
+
+Anggota Kelas TI - 4A
+Angga Putra Umbara (A2.2000123) Edit index.php
+Arya Ahmad Zakaria (A2.2000136) Edit tambah.php
+Elen Nurhasanah (A2.2000033) Edit CSS, Edit Hapus.php dan Searching
+Rizki Fauziah Arief (A2.2000096) Function.php, ajax, js, Login.php, Logout.php, Database, Hosting
+
+Akun Demo
+username	: admin
+password	: admin
+
+Link
+https://1234543212345.000webhostapp.com/
+
+Jika halaman tidak dapat dibuka matikan security/keamanan website di crome/browser perangkatnya.
