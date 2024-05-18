@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Laundry Kilat Sat Set</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <br>
+<center>
+    <table class="tabel1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><h2 class="h2">LAUNDRY KILAT SAT SET</h2></td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="tabel3">
+        <tr>
+            <th>Keterangan</th>
+        </tr>
+    </table>
+    
+    <table class="tabel2">
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <th>Jenis</th>
+            <th>Harga per Kilo</th>
+        </tr>
+        <tr>
+            <td>Pakaian</td>
+            <td>Rp. 12.000</td>
+        </tr>
+        <tr>
+            <td>Jas</td>
+            <td>Rp. 35.000</td>
+        </tr>
+        <tr>
+            <td>Selimut</td>
+            <td>Rp. 50.000</td>
+        </tr>
+        <tr>
+            <td>Karpet</td>
+            <td>Rp. 88.000</td>
+        </tr>
+    </table>
+<br>
+    
+<table>
+    <tr>
+        <td>Silahkan masukan jenis laundry yang diinginkan!</td>
+    </tr>
+    <tr>
+        <td>Note: Terdapat diskon pada setiap jenis tertentu!</td>
+    </tr>
+</table>
+
+<br>
+<table class="tabel3">
+    <tr>
+        <th>Masukan Pesanan</th>
+    </tr>
+</table>
+
+    <br>
+    <div style="padding: 5px">
+        <a>Pilih Jenis Laundry :</a><br><br>
+        <select class="button" name="laundry" id="namaLaundry">
+            <option value="Pakaian">Pakaian</option>
+            <option value="Jas">Jas</option>
+            <option value="Selimut">Selimut</option>
+            <option value="Karpet">Karpet</option>
+        </select>
+        <br><br>
+        <a>Masukan Berat Laundry : </a><br>
+        <input class="kotak_input" type="number" name="berat" placeholder="">
+        <br><br>
+        <button class="button" onclick="tambahLaundry()">Tambah</button>
+    </div>
+
+<main>
+    <div>
+        <ul id="list-laundry" onchange="newTotal(this)"></ul>
+    </div>
+</main>
+
+    <h2>Total Pesanan : <span id="total"></span></h2>
+</center>
+
+    <h4 text align="center"> Kontak saya:</h4>
+
+	<center>
+	<table border="0" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>
+				<a href="https://www.instagram.com/kiki_kim201" target="_blank">
+				<img src="assets/images/instagram.png" alt="instagram" width="30">
+				</a>
+			</td>
+			<td>
+				<a href="https://rizkifauziaharief.blogspot.com/?m=1" target="_blank">
+				<img src="assets/images/blog.png" alt="blog" width="30">
+				</a>
+			</td>
+			<td>
+				<a href="https://dikbasa.academia.edu/Rizkifauziaharief" target="_blank">
+				<img src="assets/images/academia.png" alt="academia" width="25">
+				</a>
+			</td>
+		</tr>
+	</table>
+	</center>
+    <br>
+
+    <table class="tabel4" cellspacing="5" cellpadding="5">
+        <tr>
+            <td rowspan="2"><img src="assets/images/LOGOFTI.png" alt="LOGOFTI" width="100"></td>
+        </tr>
+        <tr>
+            <td align="right" style="color: white;">Fakultas Teknologi Informasi<br>2022</td>
+        </tr>
+    </table>
+
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/laundry.js"></script>
+    <script src="assets/js/register.js"></script>
+    <script src="service-worker.js"></script>
+
+</body>
+</html>
