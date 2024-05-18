@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TiketLAKU</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/tiketlaku-192.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+    footer {
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #343a40;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .footer2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #d6e2ee;
+    }
+    header {
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #343a40;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .header2 {
+      background-color: #d6e2ee ;
+      color: #d6e2ee;
+    }
+  </style>
+</head>
+
+<body class="align-items-start pt-0 flex-column">
+  <header>
+    <img class="header" src="assets/images/tiket1.png" width="125" />
+  </header>
+
+  <div class="header2">
+    <div>
+      <center>
+        <p>.</p>
+      </center>
+    </div>
+  </div>
+  
+  <main>
+    <br>
+
+    <center>
+      <table class="tabel1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <h2 class="h2">TiketLAKU</h2>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <table class="tabel3">
+        <tr>
+          <th>Daftar Harga Tiket XYZ Fest 2022</th>
+        </tr>
+      </table>
+      <br>
+
+      <div class="max-w-md p-0 overflow-hidden rounded-lg shadow dark:bg-gray-900 dark:text-gray-100">
+        <table class="tabel2">
+          <br>
+          <tr>
+            <td>VIP 3 Day Pass</td>
+            <td>Rp.200.000</td>
+          </tr>
+          <tr>
+            <td>Normal 3 Day Pass</td>
+            <td>Rp. 225.000</td>
+          </tr>
+          <tr>
+            <td>Normal Daily Day 1</td>
+            <td>Rp. 80.000</td>
+          </tr>
+          <tr>
+            <td>Normal Daily Day 2</td>
+            <td>Rp. 80.000</td>
+          </tr>
+          <tr>
+            <td>Normal Daily Day 3</td>
+            <td>Rp. 80.000</td>
+          </tr>
+        </table>
+        <br>
+      </div>
+      <br>
+      
+      <div class="max-w-md p-0 overflow-hidden rounded-lg shadow dark:bg-gray-900 dark:text-gray-100">
+        <table class="tabel2">
+          <br>
+          <tr>
+            <td align="left">Nama</td>
+            <td>:</td>
+            <td><input type="text" name="nama_pelanggan" placeholder="Nama Pelanggan" id="nama_pelanggan"
+                class="border rounded p-2"></td>
+          </tr>
+
+          <tr>
+            <td align="left">Tiket</td>
+            <td>:</td>
+            <td>
+              <select class="border rounded p-2" name="jenis_tiket" id="jenis_tiket">
+                <option value="VIP 3 Day Pass">VIP 3 Day Pass</option>
+                <option value="Normal 3 Day Pass">Normal 3 Day Pass</option>
+                <option value="Normal Daily Day 1">Normal Daily Day 1</option>
+                <option value="Normal Daily Day 2">Normal Daily Day 2</option>
+                <option value="Normal Daily Day 3">Normal Daily Day 3</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="left">Jumlah Tiket</td>
+            <td>:</td>
+            <td>
+              <input type="number" name="jumlah_tiket" value="1" placeholder="Masukan Jumlah Tiket" id="jumlah_tiket"
+                class="border rounded p-2">
+            </td>
+          </tr>
+        </table>
+        <br>
+      </div>
+      <br>
+
+      <div>
+        <button type="button" class="bg-gray-700 px-4 py-2 rounded text-white" onclick="addTiket()">+ Tambah</button>
+      </div>
+      <br>
+
+      <div id="section-to-print">
+        <div class=" pt-6">
+          <p class="mb-4 text-xl font-semibold print:hidden">Total Pembayaran: <span id="total_bayar"></span></p>
+          <div id="table">
+          </div>
+          <p class="mt-4 text-right text-transparent print:text-black font-bold">Total Pembayaran: <span
+              id="total_bayar_in_print"></span>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" class="bg-gray-700 px-4 py-2 rounded text-white" onclick="window.print()">Print</button>
+      </div>
+      <br>
+
+    </center>
+  </main>
+
+<!-- footer -->
+
+  <footer>
+    <br>
+    <p align="center">Presented By</p>
+    <br>
+    <p align="center">Rizki-Elen-Fadillah</p>
+    <center>
+      <table border="0" cellspacing="0" cellpadding="5">
+        <td>
+          <a href="https://www.instagram.com/kiki_kim201" target="_blank">
+            <img src="assets/images/instagram.png" alt="instagram" width="30">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.instagram.com/hieel___/" target="_blank">
+            <img src="assets/images/instagram.png" alt="instagram" width="30">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.instagram.com/fadilismail56/" target="_blank">
+            <img src="assets/images/instagram.png" alt="instagram" width="30">
+          </a>
+        </td>
+        </tr>
+      </table>
+    </center>
+    <br>
+
+  </footer>
+
+  <div class="footer2">
+    <div>
+      <center>
+        <p>Copyright © 2022 TiketLAKU</p>
+      </center>
+    </div>
+  </div>
+
+<!-- //footer -->
+
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/register.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
